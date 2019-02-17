@@ -1,6 +1,4 @@
 # CTF
-##  MISC
----
 ##  Crypto
 ---
 ###  only flag get flag
@@ -25,3 +23,11 @@
 ###  base家大哥来找事了
 根据题面意思可知为base加密，最大的即为base后的数字，最大的即为base92加密  
 [关于ctf工具的网站](http://ctf.ssleye.com/)
+###  神奇的base
+由题目可知为base解密   
+```R1kzRE1RWldHRTNET04yQ0c0WlRNT0pXSVEzVEFOU0RHWTJUT1JBPQ==```   
+base64的特征为末尾有==（有时候没有）,对如上密文进行解密后得：   
+```GY3DMQZWGE3DON2CG4ZTMOJWIQ3TANSDGY2TORA=```   
+base32的特征为末尾有=（有时候没有），对如上密文进行解密后得:   
+```666C61677B73696D706C657D```
+根据规律猜测为base16，解密可得flag
